@@ -18,19 +18,20 @@ Currently, the repository is organized by the functionality of the automated age
 
 1. Please specify the pre-requisites within each of your experimental project
 2. Please specify the requirements and installation guide
-3. Please include a usage statement 
+3. Please include a usage statement
+Notable references are documented in [Notable References](References.md) as inspirations. 
 
 ## How to Contribute
 
 Join us in our mission to democratize scientific research through AI. Whether you're a scientist, developer, or enthusiast, your contributions can help shape the future of research across disciplines. 
 
-To succinctly describe each framework and integrate them into the `README.md`, you can condense the information into one-liner descriptions:
+We are committed to ensuring the safety and ethical use of these automated agents in scientific research. Contributors are encouraged to consider the implications of their work, particularly in terms of privacy, data security, and the potential impact on society and the environment. We will not accept developments that may lead to harm. All projects here need to adhere to best practices and guidelines for ethical AI development and application. 
 
 ---
 
 ## Useful Frameworks
 
-- **[AutoGPT](https://github.com/Significant-Gravitas/AutoGPT):**
+- **[AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)**
 - **[BabyAGI](https://github.com/yoheinakajima/babyagi)**
 - **[LangChain](https://github.com/langchain-ai/langchain)** 
 - **[AutoGen](https://github.com/microsoft/autogen)**
