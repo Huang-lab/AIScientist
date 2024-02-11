@@ -1,10 +1,14 @@
 # Notable References
 Papers and Codes of Automated Agents for Research
 
+### Autogen
+- **Paper:** [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)
+- **Code:** [https://github.com/microsoft/autogen]https://github.com/microsoft/autogen)
+
 ### Coscientist
-- **Paper:** [Integrating AI into the practice of scientific research](https://www.nature.com/articles/s41586-023-06792-0)
+- **Paper:** [Autonomous chemical research with large language models](https://www.nature.com/articles/s41586-023-06792-0)
 - **Code:** [GitHub - gomesgroup/coscientist](https://github.com/gomesgroup/coscientist)
 
 ### ChemCrow
-- **Paper:** [ChemCrow: Crowdsourcing Chemical Reaction Predictions](https://arxiv.org/abs/2304.05376)
+- **Paper:** [ChemCrow: Augmenting large-language models with chemistry tools](https://arxiv.org/abs/2304.05376)
 - **Code:** [GitHub - ur-whitelab/chemcrow-public](https://github.com/ur-whitelab/chemcrow-public)
