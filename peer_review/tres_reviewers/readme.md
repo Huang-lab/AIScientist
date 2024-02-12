@@ -49,3 +49,11 @@ Key Insight: Rather provide a singular review from one point of view, Tres Revie
    ```
 
 3. The tool will process the manuscript, query the GPT API for a review, and generate a review report in the same directory as the manuscript file, named `Tres_review_report_<timestamp>_<original_filename>.txt`.
+
+## Additional Notes
+
+1. The example folder also contains three output where the total read token lengths was adjusted 6-7.5k, where the output goes from the longest (most tokens left) to shortest. Testing was mainly via price-efficient GPT 3.5 turbo (end 2023, beginning 2024), likely GPT 4 models can yield better results.
+
+2. I've also tried other methods, i.e., using multi-agent framework (autogen) to spin one Editor and three reviewers. However it is challenging to get them only to speak up at the time of asking and thus many not required back-and-forth waste the GPT query. Also even when using the same GPT model autogen agents already seem to have quite some token lengths occupied and outputs are typically shorter.
+
+3. Some ideas for future directions: Incorporate other open-source LLMs. Directly improve the Manuscript. Review peer-review to retain only high-quality comments worth addressing.
