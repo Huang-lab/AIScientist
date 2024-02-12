@@ -75,12 +75,12 @@ def query_gpt(text, section_name, model="gpt-3.5-turbo-0125"):
     return response.choices[0].message.content
 
 # this is if we split the reviews into different sections, currently not needed as token lengths expanded substaintially
-# now we focus on the first 6000k token, sufficient for most well-written manuscripts
+# now we focus on the first 6500k token, sufficient for most well-written manuscripts
 # this token limits helps the LLM not run out of token when generating reviews
 # if one uses a more powerful model with longer contexts length, could easily expand the # of tokens
 
 
-def split_into_sections(text, max_tokens=6000):
+def split_into_sections(text, max_tokens=6500):
     """
     Splits the given text into sections, each with a maximum number of tokens.
 
@@ -127,13 +127,19 @@ def main():
 
     # Prepare and write the review report
     timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
-    original_filename = os.path.basename(file_path).replace(" ", "_")
-    report_filename = f"Tres_review_report_{timestamp}_{original_filename}.txt"
+    original_filename = os.path.basename(file_path)  # Get just the file name
+    original_directory = os.path.dirname(
+        file_path)  # Get the directory of the file
 
-    with open(report_filename, "w") as report_file:
+    # Replace the file extension with ".txt" and prepend "Tres_review_report_" to the filename
+    report_filename = f"Tres_review_report_{timestamp}_{os.path.splitext(original_filename)[0]}.txt"
+    # Construct the full path for the report
+    report_file_path = os.path.join(original_directory, report_filename)
+
+    with open(report_file_path, "w") as report_file:
         report_file.write(f"AI Review of {section_name}:\n{gpt_response}\n")
 
-    print(f"Review report saved as: {report_filename}")
+    print(f"Review report saved as: {report_file_path}")
 
 
 if __name__ == '__main__':
