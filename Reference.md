@@ -12,3 +12,7 @@ Papers and Codes of Automated Agents for Research
 ### ChemCrow
 - **Paper:** [ChemCrow: Augmenting large-language models with chemistry tools](https://arxiv.org/abs/2304.05376)
 - **Code:** [GitHub - ur-whitelab/chemcrow-public](https://github.com/ur-whitelab/chemcrow-public)
+
+### BioChatter
+- **Paper:** [A Platform for the Biomedical Application of Large Language Models](https://arxiv.org/abs/2305.06488)
+- **Code:** [https://github.com/biocypher/biochatter](https://github.com/biocypher/biochatter)
