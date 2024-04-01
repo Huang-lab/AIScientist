@@ -1,6 +1,12 @@
 # Notable References
 Papers and Codes of Automated Agents for Research
 
+### This page by CoALA paper summarize ongoing 
+- [**GitHub:**](https://github.com/ysymyth/awesome-language-agents)
+
+### LLMCompiler: An LLM Compiler for Parallel Function Calling
+- [**GitHub**](https://github.com/SqueezeAILab/LLMCompiler)
+  
 ### Autogen
 - **Paper:** [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)
 - **Code:** [https://github.com/microsoft/autogen]https://github.com/microsoft/autogen)
